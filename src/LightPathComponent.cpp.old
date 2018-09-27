@@ -1,0 +1,11 @@
+#include "LightPathComponent.hpp"
+
+namespace LightPathPlugin {
+  LightPathComponent::LightPathComponent( const std::string& name, Ra::Engine::Entity* entity ) :
+    Component( name, entity ) {}
+
+  LightPathComponent::~LightPathComponent() {}
+  
+  void LightPathComponent::initialize() {}
+  
+} // namespace LightPathPlugin

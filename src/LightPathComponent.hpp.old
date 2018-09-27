@@ -1,0 +1,18 @@
+#ifndef LIGHTPATHPLUGIN_LIGHTPATHCOMPONENT_HPP
+#define LIGHTPATHPLUGIN_LIGHTPATHCOMPONENT_HPP
+
+#include <LightPathPluginMacros.hpp>
+#include <Engine/Component/Component.hpp>
+
+namespace LightPathPlugin {
+  class PP_PLUGIN_API LightPathComponent : public Ra::Engine::Component {
+  public:
+    LightPathComponent( const std::string& name, Ra::Engine::Entity* entity );
+    virtual ~LightPathComponent();
+
+    virtual void initialize() override;
+  };
+
+} // namespace LightPathPlugin
+
+#endif // LIGHTPATHPLUGIN_LIGHTPATHCOMPONENT_HPP
